@@ -47,9 +47,11 @@ body {
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  max-width: 22em;
+  max-width: 24em;
   min-height: 30em;
   border-radius: 1.2em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
   & > .banner {
     & > img {
@@ -120,31 +122,31 @@ body {
       }
 
       @media screen and (max-width: 340px) {
-          & > img,
-          & > h3,
-          & > p,
-          & > a {
-              grid-column: 2/4;
-              place-self: center;
-              margin: 0;
-              text-align: center;
-          }
+        & > img,
+        & > h3,
+        & > p,
+        & > a {
+          grid-column: 2/4;
+          place-self: center;
+          margin: 0;
+          text-align: center;
+        }
 
-          & > img {
-              grid-row: 1;
-          }
+        & > img {
+          grid-row: 1;
+        }
 
-          & > h3 {
-              grid-row: 2;
-          }
+        & > h3 {
+          grid-row: 2;
+        }
 
-          & > p {
-              grid-row: 3;
-          }
+        & > p {
+          grid-row: 3;
+        }
 
-          & > a {
-              grid-row: 4;
-          }
+        & > a {
+          grid-row: 4;
+        }
       }
     }
 
@@ -153,8 +155,8 @@ body {
       font-size: 0.9rem;
       font-weight: 400;
       display: inline-block;
-      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      box-shadow: hsla(245, 75%, 52%, 0.19) 0px 10px 20px,
+        hsla(245, 75%, 52%, 0.23) 0px 6px 6px;
       width: 100%;
       padding: 0.8em;
       margin: 1.5em auto;
