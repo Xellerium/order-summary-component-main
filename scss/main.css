@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #e0e8ff;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  place-items: center;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: none;
+  }
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.card {
+  background-color: white;
+  max-width: 22em;
+  min-height: 30em;
+  border-radius: 1.2em;
+}
+
+.card > .banner > img {
+  border-top-left-radius: 1.2em;
+  border-top-right-radius: 1.2em;
+}
+
+.card > .order__details {
+  padding: 2em;
+  text-align: center;
+}
+
+.card > .order__details > .title {
+  color: #1f2f56;
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.card > .order__details > p {
+  margin-bottom: 1.2rem;
+  color: #7280a7;
+  font-size: 0.9rem;
+  line-height: 1.5em;
+}
+
+.card > .order__details > .plan__section {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  background-color: #f5f7ff;
+  border-radius: 0.6em;
+  margin: auto;
+  padding: 0.8em;
+}
+
+.card > .order__details > .plan__section > img {
+  margin-right: 0.8em;
+  width: 2.5em;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  place-self: center;
+}
+
+.card > .order__details > .plan__section > h3 {
+  color: #1f2f56;
+  text-align: left;
+  font-size: 1rem;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.card > .order__details > .plan__section > p {
+  color: #7280a7;
+  text-align: left;
+  font-size: 0.9rem;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.card > .order__details > .plan__section > a {
+  text-decoration: underline;
+  color: #3829e0;
+  font-size: 0.9rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  place-self: center right;
+}
+
+.card > .order__details > .plan__section > a:hover {
+  color: #7166eb;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 340px) {
+  .card > .order__details > .plan__section > img,
+  .card > .order__details > .plan__section > h3,
+  .card > .order__details > .plan__section > p,
+  .card > .order__details > .plan__section > a {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    place-self: center;
+    margin: 0;
+    text-align: center;
+  }
+  .card > .order__details > .plan__section > img {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .card > .order__details > .plan__section > h3 {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .card > .order__details > .plan__section > p {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .card > .order__details > .plan__section > a {
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+}
+
+.card > .order__details > .btn {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  display: inline-block;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: 100%;
+  padding: 0.8em;
+  margin: 1.5em auto;
+  border-radius: 0.6em;
+  background-color: #3829e0;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.card > .order__details > .btn:hover {
+  background-color: #7166eb;
+}
+
+.card > .order__details > .cancel {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #7280a7;
+}
+
+.card > .order__details > .cancel:hover {
+  color: #1f2f56;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
